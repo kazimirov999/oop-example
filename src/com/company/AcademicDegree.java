@@ -1,7 +1,7 @@
 package com.company;
 
 public enum AcademicDegree {
-    Postgraduate(1), Assistant(2), Full_Professor(3);
+    POSTGRADUATE(1),ASSISTANT(2), FULL_PROFESSOR(3);
 
     private int value;
 

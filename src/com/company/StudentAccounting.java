@@ -12,14 +12,14 @@ public class StudentAccounting implements Accounting<Student, Currency> {
     public String getSalary(Student student) {
 
         salary = "Salary of " + student.getName() + " " +
-                  salaryRate + " "  + getCurrency(student);
+                  salaryRate + " "  + getCurrency();
 
         System.out.println(salary);
 
         return salary;
     }
 
-    public Currency getCurrency(Student student) {
+    public Currency getCurrency() {
         return Currency.UAH;
     }
 

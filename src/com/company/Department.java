@@ -5,12 +5,12 @@ import java.util.List;
 
 public class Department {
 
-    private String name;
+    private final String name;
     private List<Student> students;
     Department(String name)
     {
         this.name = name;
-        students = = new ArrayList<>();
+        students = new ArrayList<>();
     }
 
     public List<Student> getStudents()
@@ -34,15 +34,10 @@ public class Department {
 
         students.remove(student);
         System.out.println(student.getName() +" ID " + student.id + " is deduct");
-        Student.amountOfStudent--;
-
-        if(student instanceof  StateStudent)
-            StateStudent.amountOfStateStudent--;
-        else
-            ContractStudent.amountOfContractStudent--;
+        student.expulsion();
 
         return students;
-}
+    }
 
     public String getName() {
         return name;

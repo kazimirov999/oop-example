@@ -20,6 +20,10 @@ public abstract class Student extends Person {
     public static void getAmountStudent() {
         System.out.println("Amount of student   " + amountOfStudent);
     }
+    public void expulsion(){
+        amountOfStudent--;
+        System.out.println("Student expulsion");
+    }
 
     protected double getAverageScore(){
         System.out.println("Student average score is " + amountOfStudent);

@@ -10,10 +10,12 @@ public class ContractStudent extends Student {
         amountOfContractStudent++;
     }
     public boolean isPaidForUniversity(){
-        if(balance < 0 )
+        if(balance < 0 ) {
             return false;
-        else
+        }
+        else {
             return true;
+        }
     }
 
     public void withdraw(int money){
@@ -22,6 +24,12 @@ public class ContractStudent extends Student {
 
     public void recharge(int money){
         balance += money;
+    }
+
+    public void expulsion(){
+        amountOfStudent--;
+        amountOfContractStudent--;
+        System.out.println("Contract student expulsion");
     }
 
     public double getAverageScore() {

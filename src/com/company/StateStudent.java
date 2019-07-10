@@ -18,6 +18,12 @@ public class StateStudent extends Student{
          }
     }
 
+    public void expulsion(){
+        amountOfStudent--;
+        amountOfStateStudent--;
+        System.out.println("State student expulsion");
+    }
+
     public double getAverageScore() {
         System.out.println("State student " + getName() +" ID " + id + " average score " + averageScore*0.9);
         return averageScore*0.9;

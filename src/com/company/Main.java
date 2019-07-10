@@ -36,13 +36,13 @@ public class Main {
         newStudent.getAmountStudent();
         StateStudent.getAmountStudent();
 
-        Professor professor = new Professor("Volodymyr", 41, AcademicDegree.Assistant);
+        Professor professor = new Professor("Volodymyr", 41, AcademicDegree.ASSISTANT);
 
         Bookkeeper bookkeeper = new Bookkeeper(600, 200);
         bookkeeper.getSalary(professor);
         bookkeeper.getSalary(newStudent);
 
-        vntu.universityInfo();
+        System.out.println(vntu.toString());
 
         for(Student fitceStudent : fitce.getStudents()){
             fitceStudent.getAverageScore();

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class University {
 
-    private String name;
+    private final String name;
     private List<Department> departments = new ArrayList<>();
 
 
@@ -18,7 +18,8 @@ public class University {
         departments.add(department);
     }
 
-    public void universityInfo() {
-        System.out.println(name + " amount department " + departments.size());
+    @Override
+    public String toString() {
+        return  name + " amount department " + departments.size();
     }
 }
